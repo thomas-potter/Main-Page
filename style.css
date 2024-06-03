@@ -1,0 +1,199 @@
+:root {
+    --heading-col: #FFFFFF;
+    --text-col: #ffffff;
+    --hover-col: #C72E2E;
+
+    --button-col: #ffffff;
+    --button-col2: #C72E2E;
+    --hover-button-col:  #000000;
+    --hover-button-col2: #ffffff;
+    --hover-text-col: #000000;
+
+    --background-col: #101010;
+
+    --col-transition-duration: 0.3s;
+
+    --accent: #D2D2D2;
+    --contrast-accent: #8E8E8E;
+    
+    --side-padding: 140px;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;    
+    text-decoration: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    background: var(--background-col);
+}
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    background: var(--background-col);
+    
+
+}
+
+.navdiv {
+    display: flex;
+
+    padding-right: 10vh;
+    padding-left: 10vh;
+    padding-top: 4vh;
+    font-size: 1.3rem;
+
+    font-weight: 700;
+
+
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--heading-col);
+}
+
+.logo-img {
+
+    width: 5vh; 
+    height: auto; 
+    padding-right: 2vh;
+
+}
+
+
+li {
+    list-style: none;
+    display: inline-block;
+    
+}
+
+li a{
+    color: var(--heading-col);
+    margin-right: 3vh;
+    transition: color var(--col-transition-duration) ease;
+}
+
+li a:hover{
+    color: var(--hover-col);    
+    
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--background-col);
+}
+
+/* Left section styling */
+.left {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Center content vertically */
+    align-items: flex-start; /* Center content horizontally */
+    padding: 120px;
+    padding-left: var(--side-padding);
+    margin-top: 120px; 
+    color: var(--text-col); /* Set text color */
+}
+
+.rounded-image {
+    max-width: 100%; /* Ensure the image fits within the container */
+    max-height: 80vh; /* Adjust as needed to limit the image height */
+    height: auto;
+    border-radius: 15px; /* Rounded corners */
+}
+
+/* Right section styling */
+.right {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-right: var(--side-padding);
+    margin-top: 80px; /* Margin from the top */
+}
+
+.content {
+    text-align: left; /* Align content to the left */
+}
+
+
+h1 {
+    font-size: 7vh;
+    font-weight: 900;
+    margin-bottom: 2vh;
+}
+
+.intro-text {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 2.5vh;
+}
+
+.intro-1 {
+    margin-bottom: 3vh;
+}
+
+.btn-main {
+    display: flex;
+}
+
+.btn-main button {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 60px;
+    margin-right: 10px;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    font-size: 2vh;
+    font-weight: 700;
+}
+
+/* Style for the first button */
+.btn-1 {
+    border: 2px solid var(--button-col2);
+    background-color: var(--button-col2); /* Fully colored with color variable */
+    color: white; /* White text */
+}
+
+.btn-1:hover {
+    transform: scale(1.05);
+    border-color: var(--hover-button-col2);
+    background-color: var(--hover-button-col2);
+    color: var(--hover-text-col);
+}
+
+/* Style for the second button */
+.btn-2 {
+    border: 2px solid var(--button-col);
+    background-color: var(--background-col); /* See-through background with background color variable */
+    color: var(--text-col); /* Text color */
+}
+
+.btn-2:hover {
+    transform: scale(1.05);
+    background-color: var(--hover-button-col2); /* Color on hover */
+    color: var(--hover-text-col);
+}
