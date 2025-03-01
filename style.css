@@ -1,199 +1,189 @@
 :root {
-    --heading-col: #FFFFFF;
-    --text-col: #ffffff;
-    --hover-col: #C72E2E;
-
-    --button-col: #ffffff;
-    --button-col2: #C72E2E;
-    --hover-button-col:  #000000;
-    --hover-button-col2: #ffffff;
-    --hover-text-col: #000000;
-
-    --background-col: #101010;
-
+    --heading-col: #000000; /* Black for headings */
+    --text-col: #333333; /* Dark gray for body text */
+    --hover-col: #ff4c4c; /* Keep hover color consistent */
+    --button-col: #ffffff; /* White button text */
+    --button-col2: #f30000; /* Red button background */
+    --hover-button-col: #000000; /* Darker red for hover */
+    --hover-text-col: #ffffff; /* White text on hover */
+    --background-col: #f9f9f9; /* Light gray background */
     --col-transition-duration: 0.3s;
+    --accent: #d2d2d2; /* Light gray accents */
+    --contrast-accent: #8e8e8e; /* Darker gray accents */
+  }
+  
 
-    --accent: #D2D2D2;
-    --contrast-accent: #8E8E8E;
-    
-    --side-padding: 140px;
-
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-* {
+  * {
     margin: 0;
-    padding: 0;    
+    padding: 0;
     text-decoration: none;
-}
-
-body {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
     background: var(--background-col);
-}
-nav{
-    justify-content: space-around;
-    align-items: center;
-    height: 5vh;
-    background: var(--background-col);
-    
-
-}
-
-.navdiv {
-    display: flex;
-
-    padding-right: 10vh;
-    padding-left: 10vh;
-    padding-top: 4vh;
-    font-size: 1.3rem;
-
-    font-weight: 700;
-
-
-    align-items: center;
-    justify-content: space-between;
-
-    cursor: pointer;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-.logo a{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: var(--heading-col);
-}
-
-.logo-img {
-
-    width: 5vh; 
-    height: auto; 
-    padding-right: 2vh;
-
-}
-
-
-li {
-    list-style: none;
-    display: inline-block;
-    
-}
-
-li a{
-    color: var(--heading-col);
-    margin-right: 3vh;
-    transition: color var(--col-transition-duration) ease;
-}
-
-li a:hover{
-    color: var(--hover-col);    
-    
-}
-
-/* Container styling */
-.container {
-    display: flex;
-    min-height: 100vh;
-    background-color: var(--background-col);
-}
-
-/* Left section styling */
-.left {
-    flex: 1; /* Take up remaining space */
+    color: var(--text-col);
+  }
+  
+  .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Center content vertically */
-    align-items: flex-start; /* Center content horizontally */
-    padding: 120px;
-    padding-left: var(--side-padding);
-    margin-top: 120px; 
-    color: var(--text-col); /* Set text color */
-}
-
-.rounded-image {
-    max-width: 100%; /* Ensure the image fits within the container */
-    max-height: 80vh; /* Adjust as needed to limit the image height */
-    height: auto;
-    border-radius: 15px; /* Rounded corners */
-}
-
-/* Right section styling */
-.right {
-    flex: 1; /* Take up remaining space */
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: top;
+    min-height: 100vh;
     padding: 20px;
-    padding-right: var(--side-padding);
-    margin-top: 80px; /* Margin from the top */
-}
-
-.content {
-    text-align: left; /* Align content to the left */
-}
-
-
-h1 {
-    font-size: 7vh;
-    font-weight: 900;
-    margin-bottom: 2vh;
-}
-
-.intro-text {
+    padding-top: 100px;
+    text-align: center;
+  }
+  
+  .subheading {
+    font-size: 1.2em;
+    color: var(--text-col);
     margin-bottom: 30px;
-    font-weight: 600;
-    font-size: 2.5vh;
-}
+    font-weight: 500;
+    font-style: italic; 
+  }
+  
+  .main-heading {
+    font-weight: 800;
+    font-size: 2.4em;
+    color: var(--heading-col);
+    margin-bottom: 70px;
+    max-width: 1000px;
 
-.intro-1 {
-    margin-bottom: 3vh;
-}
+  }
 
-.btn-main {
+  .underline {
+    text-decoration: underline;
+  }
+
+  .content-wrapper {
     display: flex;
-}
-
-.btn-main button {
-    font-family: "Montserrat", sans-serif;
-    padding: 10px 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Ensures proper stacking on smaller screens */
+  }
+  
+  .text-box {
+    flex: 1;
+    padding: 20px;
+    max-width: 500px;
+    font-weight: 300;
+  }
+  
+  .text-box b {
+    font-weight: 600;
+  }
+  
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .benefits-list li {
+    font-size: 1.3em;
+    line-height: 1.4;
+    margin-bottom: 35px;
+    text-align: left;
+  }
+  
+  .checkmark {
     margin-right: 10px;
+    color: #4caf50;
+  }
+  
+  .image-box {
+    flex: 1;
+    padding: 20px;
+    max-width: 500px;
+  }
+  
+  .rounded-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+  }
+  
+  .input-with-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%; /* Ensure the parent container takes full width */
+    max-width: 600px; /* Optional: Set a larger max-width */
+  }
+  
+  #gumroad-follow-form-embed-input {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid var(--contrast-accent); /* Light gray border */
+    border-radius: 2rem;
+    color: var(--text-col); /* Dark gray text */
+    background-color: #ffffff; /* White background */
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  #gumroad-follow-form-embed-button {
+    font-family: "Poppins", sans-serif;
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
     border-radius: 2rem;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
-    font-size: 2vh;
-    font-weight: 700;
-}
-
-/* Style for the first button */
-.btn-1 {
-    border: 2px solid var(--button-col2);
-    background-color: var(--button-col2); /* Fully colored with color variable */
-    color: white; /* White text */
-}
-
-.btn-1:hover {
+    color: var(--button-col); /* White text */
+    background-color: var(--button-col2); /* Red background */
+    border: 2px solid var(--button-col2); /* Red border */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  #gumroad-follow-form-embed-button:hover {
     transform: scale(1.05);
-    border-color: var(--hover-button-col2);
-    background-color: var(--hover-button-col2);
-    color: var(--hover-text-col);
-}
-
-/* Style for the second button */
-.btn-2 {
-    border: 2px solid var(--button-col);
-    background-color: var(--background-col); /* See-through background with background color variable */
-    color: var(--text-col); /* Text color */
-}
-
-.btn-2:hover {
-    transform: scale(1.05);
-    background-color: var(--hover-button-col2); /* Color on hover */
-    color: var(--hover-text-col);
-}
+    background-color: var(--hover-button-col); /* Darker red on hover */
+    color: var(--hover-text-col); /* White text on hover */
+    border-color: var(--hover-button-col);
+    text-shadow: 0 0 30px #ffffff; /* White glow */
+    
+  }
+  
+  .ps {
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 1em;
+  }
+  
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .text-box, .image-box {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .main-heading {
+      font-size: 2em;
+    }
+  
+    .benefits-list li {
+      font-size: 1em;
+    }
+  }
+  
