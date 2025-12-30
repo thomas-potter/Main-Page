@@ -1,155 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FREE £20 GIFT CARD!!!</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Comic Sans MS", "Arial Black", cursive;
-            color: #000;
-            text-align: center;
-            background: linear-gradient(135deg, #ffff00, #ff9900);
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎉 Happy Birthday, Matthew! 🎉</title>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Comic Neue', 'Comic Sans MS', 'Arial Black', sans-serif;
+        text-align: center;
+        background: linear-gradient(135deg, #fffa7b, #ff8c42, #ff4b4b);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
 
-        .popup {
-            max-width: 90%;
-            width: 500px;
-            margin: 50px auto;
-            background: linear-gradient(#ffffaa, #ffcc66);
-            border: 5px dashed red;
-            padding: 20px;
-            box-shadow: 0 0 20px magenta;
-            border-radius: 10px;
-        }
+    .popup {
+        max-width: 90%;
+        width: 500px;
+        margin: 50px auto;
+        background: linear-gradient(#fff9a0, #ffcc80);
+        border: 5px dashed red;
+        padding: 20px;
+        box-shadow: 0 0 20px magenta;
+        border-radius: 10px;
+        position: relative;
+        z-index: 10;
+    }
 
-        h1 {
-            color: red;
-            text-shadow: 2px 2px yellow;
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
+    h1 {
+        color: red;
+        text-shadow: 2px 2px yellow;
+        font-size: 28px;
+        margin-bottom: 10px;
+        animation: bounceFade 2s infinite;
+    }
 
-        .subtitle {
-            font-size: 18px;
-            margin-top: 10px;
-        }
+    .subtitle {
+        font-size: 18px;
+        margin-top: 10px;
+    }
 
-        .name {
-            color: blue;
-            text-decoration: underline;
-        }
+    .name {
+        color: blue;
+        text-decoration: underline;
+    }
 
-        .warning {
-            color: darkred;
-            font-size: 16px;
-            background: #ffcccc;
-            padding: 10px;
-            border: 2px solid red;
-            margin: 15px 0;
-        }
+    .warning {
+        color: darkred;
+        font-size: 16px;
+        background: #ffcccc;
+        padding: 10px;
+        border: 2px solid red;
+        margin: 15px 0;
+    }
 
-        .claim-btn {
-            display: inline-block;
-            margin: 20px 0;
-            padding: 12px 20px;
-            font-size: 18px;
-            background: lime;
-            color: black;
-            text-decoration: none;
-            border: 4px outset green;
-            animation: blink 1s infinite;
-            border-radius: 5px;
-        }
+    .claim-btn {
+        display: inline-block;
+        margin: 20px 0;
+        padding: 12px 20px;
+        font-size: 18px;
+        background: lime;
+        color: black;
+        text-decoration: none;
+        border: 4px outset green;
+        animation: blink 1s infinite;
+        border-radius: 5px;
+    }
 
-        .claim-btn:hover {
-            background: yellow;
-            border-color: red;
-        }
+    .claim-btn:hover {
+        background: yellow;
+        border-color: red;
+    }
 
-        .fineprint {
-            font-size: 12px;
-            color: #333;
-        }
+    .fineprint {
+        font-size: 12px;
+        color: #333;
+    }
 
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0.3; }
-            100% { opacity: 1; }
-        }
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0.3; }
+        100% { opacity: 1; }
+    }
 
-        /* Make marquee text smaller on mobile */
-        marquee {
-            font-size: 16px;
-        }
+    @keyframes bounceFade {
+        0%, 100% { transform: translateY(0); opacity: 1; }
+        50% { transform: translateY(-15px); opacity: 0.8; }
+    }
 
-        /* Responsive adjustments */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 24px;
-            }
+    /* Confetti particles */
+    .confetti {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        opacity: 0.8;
+        z-index: 5;
+        top: 0;
+        left: 50%;
+        pointer-events: none;
+    }
 
-            .subtitle {
-                font-size: 16px;
-            }
-
-            .warning {
-                font-size: 14px;
-            }
-
-            .claim-btn {
-                font-size: 16px;
-                padding: 10px 16px;
-            }
-        }
-    </style>
+    @media (max-width: 600px) {
+        h1 { font-size: 24px; }
+        .subtitle { font-size: 16px; }
+        .warning { font-size: 14px; }
+        .claim-btn { font-size: 16px; padding: 10px 16px; }
+    }
+</style>
 </head>
 <body>
 
-    <div class="popup">
-        <h1>🎉 CONGRATULATIONS 🎉</h1>
+<div class="popup">
+    <h1>🎉 Happy Birthday, Matthew! 🎉</h1>
 
-        <marquee behavior="alternate" scrollamount="8">
-            YOU ARE THE 1,000,000th VISITOR!!!
-        </marquee>
+    <p class="subtitle">
+        Dear <span class="name">Matthew</span>,
+    </p>
 
-        <p class="subtitle">
-            Dear <span class="name">Matthew</span>,
-        </p>
+    <p>
+        Our records show you qualify for a <strong>FREE £20 GIFT CARD</strong> 💷
+    </p>
 
-        <p>
-            Our records show you qualify for a <strong>FREE £20 GIFT CARD</strong> 💷
-        </p>
+    <p class="warning">
+        ⚠️ LIMITED TIME OFFER ⚠️<br>
+        This deal expires in <span id="timer">10</span> seconds!!!
+    </p>
 
-        <p class="warning">
-            ⚠️ LIMITED TIME OFFER ⚠️<br>
-            This deal expires in <span id="timer">10</span> seconds!!!
-        </p>
+    <a href="https://tinyurl.com/jzytn3eu" class="claim-btn">
+        👉 CLAIM YOUR £20 GIFT CARD NOW 👈
+    </a>
 
-        <a href="https://tinyurl.com/jzytn3eu" class="claim-btn">
-            👉 CLAIM YOUR £20 GIFT CARD NOW 👈
-        </a>
+    <p class="fineprint">
+        * No credit card required<br>
+        * 100% legit<br>
+        * Trusted by millions since 2003
+    </p>
+</div>
 
-        <p class="fineprint">
-            * No credit card required<br>
-            * 100% legit<br>
-            * Trusted by millions since 2003
-        </p>
-    </div>
+<script>
+    // Countdown timer
+    let timeLeft = 10;
+    const timerEl = document.getElementById("timer");
+    setInterval(() => {
+        if (timeLeft > 0) {
+            timeLeft--;
+            timerEl.textContent = timeLeft;
+        }
+    }, 1000);
 
-    <script>
-        let timeLeft = 10;
-        const timerEl = document.getElementById("timer");
+    // Confetti generator
+    function createConfetti() {
+        const colors = ['#ff0', '#f00', '#0f0', '#0ff', '#f0f', '#ff8800'];
+        const confetti = document.createElement('div');
+        confetti.classList.add('confetti');
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.left = Math.random() * window.innerWidth + 'px';
+        confetti.style.animation = `fall ${2 + Math.random()*3}s linear forwards`;
+        document.body.appendChild(confetti);
 
-        setInterval(() => {
-            if (timeLeft > 0) {
-                timeLeft--;
-                timerEl.textContent = timeLeft;
-            }
-        }, 1000);
-    </script>
+        setTimeout(() => confetti.remove(), 5000);
+    }
+
+    setInterval(createConfetti, 150);
+
+    // Confetti fall animation
+    const styleSheet = document.createElement("style");
+    styleSheet.textContent = `
+        @keyframes fall {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+        }
+    `;
+    document.head.appendChild(styleSheet);
+</script>
 
 </body>
 </html>
