@@ -2,32 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FREE £20 GIFT CARD!!!</title>
     <style>
         body {
-            background: url("https://i.imgur.com/7QZQZQZ.gif");
+            margin: 0;
+            padding: 0;
             font-family: "Comic Sans MS", "Arial Black", cursive;
             color: #000;
             text-align: center;
+            background: linear-gradient(135deg, #ffff00, #ff9900);
         }
 
         .popup {
+            max-width: 90%;
             width: 500px;
             margin: 50px auto;
-            background: linear-gradient(#ffff00, #ff9900);
+            background: linear-gradient(#ffffaa, #ffcc66);
             border: 5px dashed red;
             padding: 20px;
             box-shadow: 0 0 20px magenta;
+            border-radius: 10px;
         }
 
         h1 {
             color: red;
             text-shadow: 2px 2px yellow;
-            font-size: 32px;
+            font-size: 28px;
+            margin-bottom: 10px;
         }
 
         .subtitle {
-            font-size: 20px;
+            font-size: 18px;
             margin-top: 10px;
         }
 
@@ -38,7 +44,7 @@
 
         .warning {
             color: darkred;
-            font-size: 18px;
+            font-size: 16px;
             background: #ffcccc;
             padding: 10px;
             border: 2px solid red;
@@ -48,13 +54,14 @@
         .claim-btn {
             display: inline-block;
             margin: 20px 0;
-            padding: 15px 25px;
-            font-size: 20px;
+            padding: 12px 20px;
+            font-size: 18px;
             background: lime;
             color: black;
             text-decoration: none;
             border: 4px outset green;
             animation: blink 1s infinite;
+            border-radius: 5px;
         }
 
         .claim-btn:hover {
@@ -63,7 +70,7 @@
         }
 
         .fineprint {
-            font-size: 10px;
+            font-size: 12px;
             color: #333;
         }
 
@@ -72,6 +79,31 @@
             50% { opacity: 0.3; }
             100% { opacity: 1; }
         }
+
+        /* Make marquee text smaller on mobile */
+        marquee {
+            font-size: 16px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+
+            .warning {
+                font-size: 14px;
+            }
+
+            .claim-btn {
+                font-size: 16px;
+                padding: 10px 16px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -79,7 +111,7 @@
     <div class="popup">
         <h1>🎉 CONGRATULATIONS 🎉</h1>
 
-        <marquee behavior="alternate" scrollamount="10">
+        <marquee behavior="alternate" scrollamount="8">
             YOU ARE THE 1,000,000th VISITOR!!!
         </marquee>
 
