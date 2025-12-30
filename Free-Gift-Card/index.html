@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FREE £20 GIFT CARD!!!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="popup">
+        <h1>🎉 CONGRATULATIONS 🎉</h1>
+
+        <marquee behavior="alternate" scrollamount="10">
+            YOU ARE THE 1,000,000th VISITOR!!!
+        </marquee>
+
+        <p class="subtitle">
+            Dear <span class="name">Matthew</span>,
+        </p>
+
+        <p>
+            Our records show you qualify for a <strong>FREE £20 GIFT CARD</strong> 💷
+        </p>
+
+        <p class="warning">
+            ⚠️ LIMITED TIME OFFER ⚠️<br>
+            This deal expires in <span id="timer">10</span> seconds!!!
+        </p>
+
+        <a href="https://tinyurl.com/jzytn3eu" class="claim-btn">
+            👉 CLAIM YOUR £20 GIFT CARD NOW 👈
+        </a>
+
+        <p class="fineprint">
+            * No credit card required<br>
+            * 100% legit<br>
+            * Trusted by millions since 2003
+        </p>
+    </div>
+
+    <script>
+        let timeLeft = 10;
+        const timerEl = document.getElementById("timer");
+
+        setInterval(() => {
+            if (timeLeft > 0) {
+                timeLeft--;
+                timerEl.textContent = timeLeft;
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
